@@ -85,7 +85,7 @@ const printQR = (ip_addr: string) => {
   url.hostname = ip_addr;
   url.port = "8080";
 
-  console.log(url.toString() + ":");
+  console.log(url.toString());
   qrcode.generate(url.toString(), { small: true });
   console.log();
 };
